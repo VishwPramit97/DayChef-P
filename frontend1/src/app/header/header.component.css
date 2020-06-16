@@ -16,11 +16,18 @@
 
 .two{
     width:40%;
-    display: flex;
-    justify-content:space-between;
+    /* display: flex;
+    justify-content:space-between; */
 }
+.two ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
  .two ul li{
-    display:inline-block;
+    width: 40%;
     list-style: none;
 }
 .two ul li:hover{

@@ -15,17 +15,18 @@
 }
 
 .two ul{
-    width: 100%;
+    width:800px;
     display: flex;
-    background-color: violet;
-    justify-content: space-around;
+    justify-content:space-around;
     align-items: center;
-    position: related;
+   
 }
  .two ul li{
     display:inline-block;
     width: 40%;
     list-style: none;
+    display:flex;
+    justify-content: space-evenly;
 }
 .two ul li:hover{
     color:red;
@@ -74,7 +75,7 @@
 .col2{
     width:50%;
     height:700px;
-    background-color:yellow;
+    background-color:white;
     color:red;
 }
 .one{

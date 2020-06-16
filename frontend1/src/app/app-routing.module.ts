@@ -4,6 +4,7 @@ import { componentFactoryName } from '@angular/compiler';
 import { WebsiteComponent } from './website/website.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
 
 
 const routes: Routes = [
@@ -13,6 +14,9 @@ const routes: Routes = [
                                  },
                                  {   
                                   path:"Login",component:LoginComponent
+                                 },
+                                 {   
+                                  path:"SignUp",component:SignUpComponent
                                  }
  ]}
 ];

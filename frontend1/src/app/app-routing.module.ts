@@ -18,7 +18,7 @@ const routes: Routes = [
                                  },
                                  {   
                                   path:"Login",component:LoginComponent
-<<<<<<< HEAD
+
                                  },
                                  {   
                                   path:"home",component:HomeComponent
@@ -31,8 +31,6 @@ const routes: Routes = [
                                  },
                                  {   
                                 path:"contact",component:ContactComponent
-=======
->>>>>>> ca7fa8da10a294a75c2fd166b6a9c83df853ca2e
                                  }
  ]}
 ];

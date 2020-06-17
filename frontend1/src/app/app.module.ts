@@ -8,6 +8,10 @@ import { HeaderComponent } from './header/header.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
+import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
+import { GalleryComponent } from './gallery/gallery.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +20,11 @@ import { SignUpComponent } from './sign-up/sign-up.component';
     HeaderComponent,
     RegisterComponent,
     LoginComponent,
-    SignUpComponent
+    SignUpComponent,
+    HomeComponent,
+    AboutComponent,
+    GalleryComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

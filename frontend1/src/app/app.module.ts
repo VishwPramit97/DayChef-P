@@ -17,6 +17,7 @@ import { DashboardheaderComponent } from './dashboardheader/dashboardheader.comp
 import { CustomcardComponent } from './customcard/customcard.component';
 import { FormsModule } from '@angular/forms';
 import { ListstudentComponent } from './liststudent/liststudent.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -40,7 +41,8 @@ import { ListstudentComponent } from './liststudent/liststudent.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

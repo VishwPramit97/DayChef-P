@@ -39,7 +39,7 @@ const routes: Routes = [
                                  {   
                                 path:"contact",component:ContactComponent
                                  }
- ]}
+ ]},
  {
   path:'dashboard',component:DashboardComponent, canActivate:[AuthGuard],children:[
     {
@@ -48,6 +48,7 @@ const routes: Routes = [
    
   ]}
 ];
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

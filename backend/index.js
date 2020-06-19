@@ -20,7 +20,7 @@ client.connect((err,con)=>{
 })
 
 const app = express();
-app.users(cors());
+app.use(cors());
 
 app.get('/', (req, res)=>{
   res.send({status:"ok",data:"this is a test api"});
@@ -52,10 +52,13 @@ app.post('/sign-in',bodyParser.json(),(req,res)=>{
 
 
 app.post('/sign-up',bodyParser.json(),(req,res)=>{
+
+
+    // console.log(req.body);
     var collection = connection.db('frontend1').collection('users');
 
    
-
+    
     collection.find({email:req.body.email}).toArray((err,docs)=>{
         if(!err && docs.length>0)
         {

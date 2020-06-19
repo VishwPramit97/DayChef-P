@@ -17,11 +17,14 @@ export class SignUpComponent implements OnInit {
   ngOnInit(): void {
   }
     signUp()
-    {
-       this.ds.signUp({name:this.nameProp, email:this.emailProp, password:this.passwordProp, mobile:this.mobileProp})
+    { 
+      // alert(JSON.stringify({name:this.nameProp, email:this.emailProp, password:this.passwordProp, mobile:this.mobileProp}))
+      
+       this.ds.SignUp({name:this.nameProp, email:this.emailProp, password:this.passwordProp, mobile:this.mobileProp})
        .subscribe((response)=>{
-         if(response.status=="ohk")
+         if(response.status=="ok")
          {
+           
            alert("registration successfully you will be redirected to login")
            this.router.navigate(['/login']);
          }

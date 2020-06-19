@@ -12,6 +12,12 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { ContactComponent } from './contact/contact.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { DashboardheaderComponent } from './dashboardheader/dashboardheader.component';
+import { CustomcardComponent } from './customcard/customcard.component';
+import { FormsModule } from '@angular/forms';
+import { ListstudentComponent } from './liststudent/liststudent.component';
+
 
 @NgModule({
   declarations: [
@@ -24,11 +30,17 @@ import { ContactComponent } from './contact/contact.component';
     HomeComponent,
     AboutComponent,
     GalleryComponent,
-    ContactComponent
+    ContactComponent,
+    DashboardComponent,
+    DashboardheaderComponent,
+    CustomcardComponent,
+    ListstudentComponent
+  
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

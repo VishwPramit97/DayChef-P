@@ -9,6 +9,9 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { ContactComponent } from './contact/contact.component';
+import { ListstudentComponent } from './liststudent/liststudent.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { AuthGuard } from './auth.guard';
 
 
 const routes: Routes = [
@@ -17,7 +20,11 @@ const routes: Routes = [
                                     path:"Register",component:RegisterComponent
                                  },
                                  {   
-                                  path:"Login",component:LoginComponent
+                                  path:"login",component:LoginComponent
+
+                                 },
+                                 {   
+                                  path:"signup",component:SignUpComponent
 
                                  },
                                  {   
@@ -33,6 +40,13 @@ const routes: Routes = [
                                 path:"contact",component:ContactComponent
                                  }
  ]}
+ {
+  path:'dashboard',component:DashboardComponent, canActivate:[AuthGuard],children:[
+    {
+      path:"",component:ListstudentComponent
+    }
+   
+  ]}
 ];
 
 @NgModule({

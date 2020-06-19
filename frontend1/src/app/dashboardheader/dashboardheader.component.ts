@@ -16,6 +16,7 @@ export class DashboardheaderComponent implements OnInit {
    {
      localStorage.removeItem("email");
      localStorage.removeItem("name");
+     alert(localStorage.getItem('email'));
      this.router.navigate(['/'])
    }
 }

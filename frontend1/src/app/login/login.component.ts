@@ -13,13 +13,17 @@ export class LoginComponent implements OnInit {
      emailProp;
      passwordProp;
   ngOnInit(): void {
+
+    alert(localStorage.getItem('email'));
+
+
     if(localStorage.getItem('email')){
       this.router.navigate(['/dashboard']);
     }
   }
   login()
   {
-    this.ds.signIn({ email:this.emailProp, password:this.passwordProp})
+    this.ds.SignIn({ email:this.emailProp, password:this.passwordProp})
     .subscribe((response)=>{
       if(response.status=="ohk")
       {

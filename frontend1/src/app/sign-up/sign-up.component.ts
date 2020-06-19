@@ -18,7 +18,7 @@ export class SignUpComponent implements OnInit {
   }
     signUp()
     {
-       this.ds.signUp({name:this.nameProp, email:this.emailProp, password:this.passwordProp, mobile:this.mobileProp})
+       this.ds.SignUp({name:this.nameProp, email:this.emailProp, password:this.passwordProp, mobile:this.mobileProp})
        .subscribe((response)=>{
          if(response.status=="ohk")
          {

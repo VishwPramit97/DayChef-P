@@ -6,7 +6,6 @@ import { SignUpComponent } from './sign-up/sign-up.component';
   providedIn: 'root'
 })
 export class DataService {
-
   constructor() { }
 }
   SignUp(d):any

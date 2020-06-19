@@ -14,21 +14,19 @@
     color:white;
 }
 
-.two{
-    width:40%;
-    /* display: flex;
-    justify-content:space-between; */
-}
 .two ul{
-    width: 100%;
+    width:800px;
     display: flex;
-    justify-content: space-around;
+    justify-content:space-around;
     align-items: center;
 }
+
 
  .two ul li{
     width: 40%;
     list-style: none;
+    display:flex;
+    justify-content: space-evenly;
 }
 .two ul li:hover{
     color:red;
@@ -52,10 +50,9 @@
 } 
 .img5{
     width:50%;
-    height:400px;
+    height:450px;
     background-image: url(chefn.jpg);
     background-size: 100% 100%;
-    background-color: blue;
     position:relative;
     left:250px;
     top:50px;

@@ -18,11 +18,11 @@ export class SignUpComponent implements OnInit {
   }
     signUp()
     { 
-     alert(JSON.stringify({name:this.nameProp, email:this.emailProp, password:this.passwordProp, mobile:this.mobileProp}))
+    //  alert(JSON.stringify({name:this.nameProp, email:this.emailProp, password:this.passwordProp, mobile:this.mobileProp}))
       
        this.ds.SignUp({name:this.nameProp, email:this.emailProp, password:this.passwordProp, mobile:this.mobileProp})
        .subscribe((response)=>{
-         alert(JSON.stringify(response));
+        //  alert(JSON.stringify(response));
          if(response.status=="ok")
          {
            

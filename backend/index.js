@@ -76,7 +76,7 @@ app.post('/sign-up',bodyParser.json(),(req,res)=>{
     })
     
 })
-app.post('/register',bodyParser.json(),(req,res)=>{
+app.post('/reg',bodyParser.json(),(req,res)=>{
 
     var collection = connection.db('frontend1').collection('employee');
     collection.find({email:req.body.email}).toArray((err,docs)=>{
@@ -86,7 +86,7 @@ app.post('/register',bodyParser.json(),(req,res)=>{
         }
         else{
          
-            collection.insert(req.body, (err,res)=>{
+            collection.insert(req.body, (err,result)=>{
                 if(!err)
                 {
                     res.send({status:"ok", data:"register success"});

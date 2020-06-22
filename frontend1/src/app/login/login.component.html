@@ -1,3 +1,4 @@
+<div class="pbase">
 <div class="base">
   <div class="picc"></div>
 <div class="loginform"> 
@@ -12,8 +13,12 @@
       <input #passref="ngModel"  [(ngModel)]="passwordProp" name="password" type="password" class="form-control" placeholder="Enter password" id="pwd">
     </div>
     
-    <button type="submit" class="btn btn-primary"(click)="login()">Submit</button>
-    <a routerLink="/signup">SignUp if not already registered</a>
+    <button type="submit" class="btn btn-primary"(click)="login()"style="margin-bottom:13px;">Submit</button>
+    <a routerLink="/signup">
+      <br>SignUp if not registered ?
+    </a>
   </form>
 </div>
+</div>
+<div class="photo"></div>
 </div>

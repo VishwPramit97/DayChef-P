@@ -24,6 +24,6 @@ export class DataService {
   reg(d):any
   {
     
-     return this.http.post('http://localhost:3000/register',d);
+     return this.http.post('http://localhost:3000/reg',d);
   }
 }

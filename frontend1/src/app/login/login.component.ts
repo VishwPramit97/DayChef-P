@@ -14,7 +14,7 @@ export class LoginComponent implements OnInit {
      passwordProp;
      ngOnInit(): void {
 
-    alert(localStorage.getItem('email'));
+    // alert(localStorage.getItem('email'));
 
 
     if(localStorage.getItem('email')){

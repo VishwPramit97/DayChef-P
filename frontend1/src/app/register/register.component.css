@@ -1,29 +1,28 @@
 .mbase{
-    width:83%;
-    height:800px;
-    background-color: white;
+    width:80%;
+    height:555px;
+    background-color:white;
     position:absolute;
     top:100px;
     left:260px;
-
 }
 .imp{
     width:400px;
-    height:400px;
+    height:360px;
     position: relative;
-    top:-450px;
+    top:-430px;
     left:30px;
     background-image: url(pl.jpg);
     background-size: 100% 100%;
 }
 .base{
     width:320px;
-    height:470px;
+    height:450px;
     background-color:rgb(253, 11, 11);
     color:white;
     position: relative;
-    top:-60px;
-    left:800px;
+    top:-70px;
+    left:700px;
   }
   .loginform{
       position: relative;

@@ -14,11 +14,16 @@ export class DataService {
 
   SignUp(d):any
   {
-    
+      
      return this.http.post('http://localhost:3000/sign-up',d);
   }
   SignIn(d):any
   {
      return this.http.post('http://localhost:3000/sign-in',d);
+  }
+  reg(d):any
+  {
+    
+     return this.http.post('http://localhost:3000/register',d);
   }
 }

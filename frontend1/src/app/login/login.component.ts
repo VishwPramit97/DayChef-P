@@ -12,7 +12,7 @@ export class LoginComponent implements OnInit {
   constructor(private router:Router, private ds:DataService) { }
      emailProp;
      passwordProp;
-  ngOnInit(): void {
+     ngOnInit(): void {
 
     alert(localStorage.getItem('email'));
 
@@ -34,6 +34,7 @@ export class LoginComponent implements OnInit {
       }
       else{
         alert("credentials are incorrect");
+        
       }
     })
     

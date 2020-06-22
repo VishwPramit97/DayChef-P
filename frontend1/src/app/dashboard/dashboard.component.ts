@@ -9,13 +9,12 @@ import { ActivatedRoute } from '@angular/router';
 export class DashboardComponent implements OnInit {
  namee;
  email;
-  constructor(private route:ActivatedRoute) { }
+  constructor() { }
 
   ngOnInit(): void {
     this.email = localStorage.getItem("eamil");
-    this.route.queryParamMap.subscribe((d)=>{
-    this.namee=d.get("name1");
-    });
+    this.namee= localStorage.getItem("name");
+
   }
   
    

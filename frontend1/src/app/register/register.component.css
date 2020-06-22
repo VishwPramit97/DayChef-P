@@ -1,0 +1,47 @@
+.mbase{
+    width:83%;
+    height:800px;
+    background-color: white;
+    position:absolute;
+    top:100px;
+    left:260px;
+
+}
+.imp{
+    width:400px;
+    height:400px;
+    position: relative;
+    top:-450px;
+    left:30px;
+    background-image: url(pl.jpg);
+    background-size: 100% 100%;
+}
+.base{
+    width:320px;
+    height:470px;
+    background-color:rgb(253, 11, 11);
+    color:white;
+    position: relative;
+    top:-60px;
+    left:800px;
+  }
+  .loginform{
+      position: relative;
+      top:50px;
+      left:25px;
+      width:270px;
+      
+  }
+  .picc{
+      width:100px;
+      height: 100px;
+      background-color:turquoise;
+      border-radius: 100%;
+      position: absolute;
+      left:calc(50% -50px);
+      left:35%;
+      top:-50px;
+      background-image: url(adm2.png);
+      background-size: 100% 100%;
+  }
+  

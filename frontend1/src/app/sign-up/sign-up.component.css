@@ -16,8 +16,8 @@
   left:0px;
 }
 .base{
-    width:450px;
-    height:500px;
+    width:400px;
+    height:480px;
     background-color:black;
     color:white;
     position:absolute;
@@ -26,9 +26,9 @@
   }
   .loginform{
       position: relative;
-      top:100px;
+      top:80px;
       left:25px;
-      width:400px;
+      width:350px;
   }
   .picc{
       width:100px;

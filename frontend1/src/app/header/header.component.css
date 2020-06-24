@@ -109,7 +109,7 @@
    translate: 2sec;
    position: absolute;
    top:100px;
-   z-index:high;
+   z-index:4;
 }
 #sidebar ul li{
        list-style: none;

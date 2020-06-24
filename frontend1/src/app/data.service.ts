@@ -11,7 +11,7 @@ export class DataService {
 
 
   constructor(private http:HttpClient) { }
-
+ 
   SignUp(d):any
   {
       

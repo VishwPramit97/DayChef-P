@@ -18,6 +18,8 @@ import { CustomcardComponent } from './customcard/customcard.component';
 import { FormsModule } from '@angular/forms';
 import { ListstudentComponent } from './liststudent/liststudent.component';
 import { HttpClientModule } from '@angular/common/http';
+import { CookComponent } from './cook/cook.component';
+import { MaidComponent } from './maid/maid.component';
 
 
 @NgModule({
@@ -35,7 +37,9 @@ import { HttpClientModule } from '@angular/common/http';
     DashboardComponent,
     DashboardheaderComponent,
     CustomcardComponent,
-    ListstudentComponent
+    ListstudentComponent,
+    CookComponent,
+    MaidComponent
   
   ],
   imports: [

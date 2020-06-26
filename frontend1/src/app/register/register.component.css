@@ -11,7 +11,7 @@
     width:400px;
     height:360px;
     position: relative;
-    top:-250px;
+    top:-270px;
     left:300px;
     background-image: url(pl.jpg);
     background-size: 100% 100%;
@@ -22,7 +22,7 @@
     background-color:rgb(253, 11, 11);
     color:white;
     position: relative;
-    top:90px;
+    top:65px;
     left:900px;
   }
   .loginform{

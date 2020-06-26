@@ -19,5 +19,9 @@ export class DashboardheaderComponent implements OnInit {
      alert(localStorage.getItem('email'));
      this.router.navigate(['/'])
    }
+   togglefun()
+   {
+       document.getElementById("sidebar").classList.toggle("active");
+   }
 }
 

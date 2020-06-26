@@ -12,6 +12,8 @@ import { ContactComponent } from './contact/contact.component';
 import { ListstudentComponent } from './liststudent/liststudent.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AuthGuard } from './auth.guard';
+import { CookComponent } from './cook/cook.component';
+import { MaidComponent } from './maid/maid.component';
 
 
 const routes: Routes = [
@@ -34,18 +36,22 @@ const routes: Routes = [
                                   path:"about",component:AboutComponent
                                  },
                                  {   
-                                path:"gallery",component:GalleryComponent
+                                   path:"gallery",component:GalleryComponent
                                  },
                                  {   
-                                path:"contact",component:ContactComponent
+                                  path:"contact",component:ContactComponent
                                  }
  ]},
  {
-  path:'dashboard',component:DashboardComponent, canActivate:[AuthGuard],children:[
-    {
-      path:"",component:ListstudentComponent
-    }
-   
+  path:"dashboard",component:DashboardComponent, canActivate:[AuthGuard],children:[
+                
+                                 {
+                                   path:"cook1",component:CookComponent
+                                 },
+                                {
+                                   path:"maid",component:MaidComponent
+                                },
+    
   ]}
 ];
 

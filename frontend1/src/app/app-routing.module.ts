@@ -43,14 +43,14 @@ const routes: Routes = [
                                  }
  ]},
  {
-  path:"dashboard",component:DashboardComponent, canActivate:[AuthGuard],children:[
+     path:"dashboard",component:DashboardComponent, canActivate:[AuthGuard],children:[
                 
                                  {
-                                   path:"cook1",component:CookComponent
+                                   path:"cook",component:CookComponent
                                  },
                                 {
                                    path:"maid",component:MaidComponent
-                                },
+                                }
     
   ]}
 ];

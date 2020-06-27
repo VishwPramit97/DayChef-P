@@ -26,4 +26,10 @@ export class DataService {
     
      return this.http.post('http://localhost:3000/reg',d);
   }
+  confirm(d):any
+  {
+   return this.http.post('http://localhost:3000/confirm',d);
+  }
+
+  
 }

@@ -101,5 +101,26 @@ app.post('/reg',bodyParser.json(),(req,res)=>{
     })
     
 })
+app.post('/confirm',bodyParser.json(),(req,res)=>{
+
+    var collection = connection.db('frontend1').collection('booking');
+       
+        
+            collection.insert(req.body, (err,result)=>{
+                if(!err)
+                {
+                    res.send({status:"ok", data:"booking success"});
+                }
+                else{
+                    res.send({status:"failed", data:err});
+                }
+            
+            })
+        
+    
+
+    
+})
+
 
    app.listen(3000, ()=>{console.log("server is listning on port 3000")});

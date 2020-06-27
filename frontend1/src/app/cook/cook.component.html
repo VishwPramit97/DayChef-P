@@ -8,36 +8,35 @@
                 </figcaption>
             </figure>
         </div>
-        <form>
+        <form #fm="ngForm">
             <ul class="booking-widget__form">
                 <li>
                     <!-- date -->
                     <label for="start-date">Start Date</label>
                     <div id="start-date" class="form-field">
-                        <input type="date" id="arrive" class="floatLabel" name="arrive">
+                        <input type="date" #arriveref="ngmodel" [(ngmodel])="arriveprop" id="arrive" class="floatLabel" name="arrive">
                         <div class="datepicker"><i class="fa fa-calendar" aria-hidden="true"></i></div>
                     </div>
                 </li>
                 <li>
                     <label for="end-date">End Date</label>
                     <div id="end-date" class="form-field">
-                        <input type="date" id="arrive" class="floatLabel" name="arrive">
+                        <input type="date"#earrive="ngmodel" [(ngmodel)]="earriveprop"  id="arrive" class="floatLabel" name="earrive">
                         <div class="datepicker"><i class="fa fa-calendar" aria-hidden="true"></i></div>
-                       <br> <input type="time" id="arrived" class="floatLabel" name="arrive" />
+                       <br> <input type="time" id="arrived" #tarrive="ngmodel" [(ngmodel)]="tarriveprop"class="floatLabel" name="tarrive" />
                        
-                      <select id="public" style="height:30px">                     
+                      <select id="public" style="height:30px" [(ngmodel)]="timeprop">                     
                             <option value="1">AM</option>
                             <option value="2">PM</option>
                            
-                            
-                    </select>
+                      </select>
 
                     
                     </div>
                 </li>
                 <li>
                     <div class="form-field form-field__checkbox">
-                        <input type="checkbox" id="flexibleDates" value="">
+                        <input type="checkbox"  id="flexibleDates" value="">
                     </div>
                     <label for="flexibleDates">Flexible dates</label>
                 </li>
@@ -45,7 +44,7 @@
                     <div class="form__dropdown">
                         <label for="services">Service</label>
                         <div class="form-field">
-                            <select id="services">    
+                            <select id="services"  [(ngmodel)]="Demandprop">    
                                 <option value="1">On Demand</option>
                                 <option value="2">Monthly Demand</option>
                                 <div class="select-button"><i class="fa fa-caret-down" aria-hidden="true"></i></div>
@@ -57,7 +56,7 @@
                         <label for="public">People</label>
                         <br>
                         <div class="form-field">
-                            <select id="public"> 
+                            <select id="public" [(ngmodel)]="peopleprop"> 
                                 <option value="0" selected="selected"></option>                        
                                 <option value="1">1-5</option>
                                 <option value="2">25</option>

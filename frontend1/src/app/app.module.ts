@@ -20,6 +20,7 @@ import { ListstudentComponent } from './liststudent/liststudent.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CookComponent } from './cook/cook.component';
 import { MaidComponent } from './maid/maid.component';
+import { CookconfirmComponent } from './cookconfirm/cookconfirm.component';
 
 
 @NgModule({
@@ -39,7 +40,8 @@ import { MaidComponent } from './maid/maid.component';
     CustomcardComponent,
     ListstudentComponent,
     CookComponent,
-    MaidComponent
+    MaidComponent,
+    CookconfirmComponent
   
   ],
   imports: [

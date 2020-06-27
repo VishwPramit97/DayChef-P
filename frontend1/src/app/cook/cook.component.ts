@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-cook',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CookComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router:Router) { }
 
   ngOnInit(): void {
   }
-
+   booking()
+   {
+    this.router.navigate(['/cookconfirm']);
+   }
 }

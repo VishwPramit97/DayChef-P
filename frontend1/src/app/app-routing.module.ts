@@ -14,6 +14,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { AuthGuard } from './auth.guard';
 import { CookComponent } from './cook/cook.component';
 import { MaidComponent } from './maid/maid.component';
+import { CookconfirmComponent } from './cookconfirm/cookconfirm.component';
 
 
 const routes: Routes = [
@@ -43,14 +44,17 @@ const routes: Routes = [
                                  }
  ]},
  {
-  path:"dashboard",component:DashboardComponent, canActivate:[AuthGuard],children:[
+     path:"dashboard",component:DashboardComponent, canActivate:[AuthGuard],children:[
                 
                                  {
-                                   path:"cook1",component:CookComponent
+                                   path:"cook",component:CookComponent
                                  },
                                 {
                                    path:"maid",component:MaidComponent
                                 },
+                                {
+                                  path:"cookconfirm",component:CookconfirmComponent
+                                }
     
   ]}
 ];

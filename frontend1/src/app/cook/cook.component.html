@@ -1,1 +1,79 @@
-<div class="gol"></div>
+<div class="gol">
+    <div class="booking-widget">
+        <div class="booking-widget__header">
+            <figure>
+               
+                <figcaption class="header-caption">
+                    <h1 style="position: relative;top:20px;left:10px;color:white;text-shadow: 2px 1px 5px black;"id="">DayChef India</h1>
+                </figcaption>
+            </figure>
+        </div>
+        <form #fm="ngForm">
+            <ul class="booking-widget__form">
+                <li>
+                    <!-- date -->
+                    <label for="start-date">Start Date</label>
+                    <div id="start-date" class="form-field">
+                        <input type="date" #arriveref="ngmodel" [(ngmodel])="arriveprop" id="arrive" class="floatLabel" name="arrive">
+                        <div class="datepicker"><i class="fa fa-calendar" aria-hidden="true"></i></div>
+                    </div>
+                </li>
+                <li>
+                    <label for="end-date">End Date</label>
+                    <div id="end-date" class="form-field">
+                        <input type="date"#earrive="ngmodel" [(ngmodel)]="earriveprop"  id="arrive" class="floatLabel" name="earrive">
+                        <div class="datepicker"><i class="fa fa-calendar" aria-hidden="true"></i></div>
+                       <br> <input type="time" id="arrived" #tarrive="ngmodel" [(ngmodel)]="tarriveprop"class="floatLabel" name="tarrive" />
+                       
+                      <select id="public" style="height:30px" [(ngmodel)]="timeprop">                     
+                            <option value="1">AM</option>
+                            <option value="2">PM</option>
+                           
+                      </select>
+
+                    
+                    </div>
+                </li>
+                <li>
+                    <div class="form-field form-field__checkbox">
+                        <input type="checkbox"  id="flexibleDates" value="">
+                    </div>
+                    <label for="flexibleDates">Flexible dates</label>
+                </li>
+                <li>
+                    <div class="form__dropdown">
+                        <label for="services">Service</label>
+                        <div class="form-field">
+                            <select id="services"  [(ngmodel)]="Demandprop">    
+                                <option value="1">On Demand</option>
+                                <option value="2">Monthly Demand</option>
+                                <div class="select-button"><i class="fa fa-caret-down" aria-hidden="true"></i></div>
+                        </select>
+
+                        </div>
+                    </div>
+                    <div class="form__dropdown">
+                        <label for="public">People</label>
+                        <br>
+                        <div class="form-field">
+                            <select id="public" [(ngmodel)]="peopleprop"> 
+                                <option value="0" selected="selected"></option>                        
+                                <option value="1">1-5</option>
+                                <option value="2">25</option>
+                                <option value="3">100</option>
+                                
+                        </select>
+
+                        </div>
+                    </div>
+                </li>
+                <li>
+                     <p style="font-size:smaller;">Note: Please make sure On Demand service of Start Date and End Date are same.</p>
+                    
+                    <button type="submit"class=" btn btn-primary" (click)="booking()"style="margin-bottom:30px; width:300px;background-color: rgb(247, 123, 123);margin-top:0px;">Proceed</button>
+                  
+                </li>
+            </ul>
+        </form>
+    </div>
+</div>

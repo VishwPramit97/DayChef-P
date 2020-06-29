@@ -15,13 +15,12 @@ export class CookComponent implements OnInit {
   arriveprop;
   tarriveprop
 
-  constructor(private router:Router, private ck:CookconfirmComponent) { }
+  constructor(private router:Router) { }
 
   ngOnInit(): void {
   }
    booking()
    {
-    this.router.navigate(['/cookconfirm']);
-    this.ck.bookin({people:this.peopleprop,demand:this.Demandprop,time:this.tarriveprop,term:this.timeprop,startdate:this.arriveprop,enddate:this.earriveprop})
+    this.router.navigate(['/dashboard/cookconfirm'],{queryParams:{people:this.peopleprop,demand:this.Demandprop,time:this.tarriveprop,term:this.timeprop,startdate:this.arriveprop,enddate:this.earriveprop}});
    }
 }

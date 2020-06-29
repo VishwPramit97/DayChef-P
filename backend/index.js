@@ -6,6 +6,8 @@ const ObjectId = require('mongodb').ObjectiveId;
 
 
 var client=new MongoClient('mongodb://localhost:27017/frontend1',{useNewUrlParser:true});
+// var client = new MongoClient("mongodb+srv://cluster0-8trwh.mongodb.net", {useNewUrlParser:true})
+
 var connection;
 client.connect((err,db)=>{
     if(!err)
@@ -105,7 +107,6 @@ app.post('/confirm',bodyParser.json(),(req,res)=>{
 
     var collection = connection.db('frontend1').collection('booking');
        
-        
             collection.insert(req.body, (err,result)=>{
                 if(!err)
                 {

@@ -1,16 +1,14 @@
-<body>
-
-
-    <div class="row">
+ <div class="row">
       <div class="col-75">
         <div class="container">
-          <form #frm="ngform">
+          <form #frm="ngForm">
           
             <div class="row">
               <div class="col-50">
                 
                 <label for="fname"><i class="fa fa-user"></i> Full Name</label>
                 <input type="text" id="fname" #firstnameref="ngModel" [(ngModel)]="firstnameprop1" name="firstname" placeholder="john">
+                                                                                                                                                    
                 <label for="email"><i class="fa fa-envelope"></i> Email</label>
                 <input type="text" id="email" name="email" #emailrefref="ngModel" [(ngModel)]="emailprop1" placeholder="@example.com">
                 <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
@@ -25,11 +23,11 @@
                   </div>
                   <div class="col-50">
                     <label for="pin">Pin Code</label>
-                    <input type="text" id="pin" name="pin"#pinref="ngModel"[(ngModel)]="pinprop1" placeholder="10001">
+                    <input type="text" id="pin" name="pin" #pinref="ngModel" [(ngModel)]="pinprop1" placeholder="10001">
                   </div>
                 </div>
                 <label for="chef">No.of chefs</label>
-                <input type="text" id="chef" name="chef"#chefref="ngModel" [(ngModel)]="chefprop1"placeholder="number">
+                <input type="text" id="chef" name="chef" #chefref="ngModel" [(ngModel)]="chefprop1" placeholder="number">
               </div>
     
               <div class="col-50">
@@ -71,4 +69,4 @@
      
     </div>
     
-    </body>
+  

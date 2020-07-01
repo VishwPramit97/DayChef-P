@@ -5,7 +5,7 @@ const MongoClient = require('mongodb').MongoClient;
 const ObjectId = require('mongodb').ObjectiveId;
 
 
-var client=new MongoClient('mongodb://localhost:27017/frontend1',{useNewUrlParser:true});
+var client=new MongoClient('mongodb+srv://daychef1:swastik@cluster0-8trwh.mongodb.net/DaychefDb?retryWrites=true&w=majority',{useNewUrlParser:true});
 // var client = new MongoClient("mongodb+srv://cluster0-8trwh.mongodb.net", {useNewUrlParser:true})
 
 var connection;
@@ -38,7 +38,7 @@ app.get('/user', (req,res)=>{
 
 
 app.post('/sign-in',bodyParser.json(),(req,res)=>{
-     var collection = connection.db('frontend1').collection('users');
+     var collection = connection.db('DaychefDb').collection('User');
      collection.find(req.body).toArray((err,docs)=>{
          if(!err && docs.length>0)
          {
@@ -55,7 +55,7 @@ app.post('/sign-in',bodyParser.json(),(req,res)=>{
 
 app.post('/sign-up',bodyParser.json(),(req,res)=>{
    console.log(req.body);
-    var collection = connection.db('frontend1').collection('users');
+    var collection = connection.db('DaychefDb').collection('User');
     collection.find({email:req.body.email}).toArray((err,docs)=>{
         if(!err && docs.length>0)
         {
@@ -80,7 +80,7 @@ app.post('/sign-up',bodyParser.json(),(req,res)=>{
 })
 app.post('/reg',bodyParser.json(),(req,res)=>{
 
-    var collection = connection.db('frontend1').collection('employee');
+    var collection = connection.db('DaychefDb').collection('employee');
     collection.find({email:req.body.email}).toArray((err,docs)=>{
         if(!err && docs.length>0)
         {
@@ -104,8 +104,8 @@ app.post('/reg',bodyParser.json(),(req,res)=>{
     
 })
 app.post('/confirm',bodyParser.json(),(req,res)=>{
-
-    var collection = connection.db('frontend1').collection('booking');
+   console.log(req.body);
+    var collection = connection.db('DaychefDb').collection('booking');
        
             collection.insert(req.body, (err,result)=>{
                 if(!err)
@@ -122,6 +122,25 @@ app.post('/confirm',bodyParser.json(),(req,res)=>{
 
     
 })
+app.post('/mconfirm',bodyParser.json(),(req,res)=>{
+    console.log(req.body);
+     var collection = connection.db('DaychefDb').collection('madebooking');
+        
+             collection.insert(req.body, (err,result)=>{
+                 if(!err)
+                 {
+                     res.send({status:"ok", data:"booking success"});
+                 }
+                 else{
+                     res.send({status:"failed", data:err});
+                 }
+             
+             })
+         
+     
+ 
+     
+ })
 
 
    app.listen(3000, ()=>{console.log("server is listning on port 3000")});

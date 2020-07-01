@@ -10,7 +10,7 @@ body {
     top:0px;
     left:0px;
     background-color:black;
-    background-image: url(lchef.jpg);
+    background-image: url(mdd.jpg);
     background-size: 100% 100%;
   }
   
@@ -42,7 +42,7 @@ body {
   }
   
   .container {
-    background-color:lightslategrey;
+    background-color:lightsalmon;
     color:white;
     border: 1px solid lightgrey;
     border-radius:3px;

@@ -21,6 +21,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { CookComponent } from './cook/cook.component';
 import { MaidComponent } from './maid/maid.component';
 import { CookconfirmComponent } from './cookconfirm/cookconfirm.component';
+import { MadeconfirmComponent } from './madeconfirm/madeconfirm.component';
 
 
 @NgModule({
@@ -41,7 +42,8 @@ import { CookconfirmComponent } from './cookconfirm/cookconfirm.component';
     ListstudentComponent,
     CookComponent,
     MaidComponent,
-    CookconfirmComponent
+    CookconfirmComponent,
+    MadeconfirmComponent
   
   ],
   imports: [

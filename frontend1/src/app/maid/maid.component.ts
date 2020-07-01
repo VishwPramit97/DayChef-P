@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ProtractorExpectedConditions } from 'protractor';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-maid',
@@ -6,10 +8,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./maid.component.css']
 })
 export class MaidComponent implements OnInit {
-
-  constructor() { }
+  earriveprop;
+  arriveprop;
+  timeprop;
+  ttimeprop;
+  demandprop;
+  peopleprop;
+  constructor(private route:Router) { }
 
   ngOnInit(): void {
   }
+  process()
+{
+  this.route.navigate(['/dashboard/madeconfirm']),{queryParam:{startdate:this.earriveprop,enddate:this.arriveprop,time:this.timeprop,shtime:this.ttimeprop,demand:this.demandprop,people:this.peopleprop}}
+}
 
 }

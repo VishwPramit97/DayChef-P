@@ -14,25 +14,26 @@
                     <!-- date -->
                     <label for="start-date">Start Date</label>
                     <div id="start-date" class="form-field">
-                        <input type="date" #arriveref="ngModel" [(ngModel])="arriveprop" id="arrive" class="floatLabel" name="arrive">
-                        <div class="datepicker"><i class="fa fa-calendar" aria-hidden="true"></i></div>
+                        <input type="date" #arriveref="ngModel"  [(ngModel)]="arriveprop" id="arrive" class="floatLabel" name="arrive">
+
                     </div>
                 </li>
                 <li>
                     <label for="end-date">End Date</label>
                     <div id="end-date" class="form-field">
                         <input type="date" #earriveref="ngModel" [(ngModel)]="earriveprop"  id="arrive" class="floatLabel" name="earrive">
-                        <div class="datepicker"><i class="fa fa-calendar" aria-hidden="true"></i></div>
-                       <br> <input type="time" id="arrived" #tarriveref="ngModel" [(ngModel)]="tarriveprop" class="floatLabel" name="tarrive" />
-                       
-                      <select id="public" style="height:30px" class="form-control" [(ngModel)]="timeprop">                     
-                            <option value="AM">AM</option>
-                            <option value="PM">PM</option>
-                           
-                      </select>
-
-                    
                     </div>
+                    
+                </li>
+                <li>
+                    <label for="Time">Time</label>
+                    <br> <input type="time" id="arrived" #tarriveref="ngModel" [(ngModel)]="tarriveprop" class="floatLabel" name="tarrive" />
+                    
+                   <select id="public" style="height:29.6px"  [(ngModel)]="timeprop" name="time">                     
+                         <option value="1">AM</option>
+                         <option value="2">PM</option>
+                        
+                   </select>
                 </li>
                 <li>
                     <div class="form-field form-field__checkbox">
@@ -44,9 +45,9 @@
                     <div class="form__dropdown">
                         <label for="services">Service</label>
                         <div class="form-field">
-                            <select id="services" class="form-control"  [(ngModel)]="Demandprop">    
+                            <select id="services" class="form-control"  [(ngModel)]="Demandprop" name="demand">    
                                 <option value="On Demand">On Demand</option>
-                                <option value="Monthly Demand">Monthly Demand</option>
+                                <option value="Monthly Demand">Monthly Demnd.</option>
                                 <div class="select-button"><i class="fa fa-caret-down" aria-hidden="true"></i></div>
                         </select>
 
@@ -56,7 +57,7 @@
                         <label for="public">People</label>
                         <br>
                         <div class="form-field">
-                            <select id="public" class="form-control" [(ngModel)]="peopleprop"> 
+                            <select id="public" class="form-control" [(ngModel)]="peopleprop" name="people"> 
                                 <option value="0" selected="selected"></option>                        
                                 <option value="1-5">1-5</option>
                                 <option value="25">25</option>

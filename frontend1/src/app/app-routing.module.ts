@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, SystemJsNgModuleLoaderConfig } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { componentFactoryName } from '@angular/compiler';
 import { WebsiteComponent } from './website/website.component';
@@ -9,12 +9,12 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { ContactComponent } from './contact/contact.component';
-import { ListstudentComponent } from './liststudent/liststudent.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AuthGuard } from './auth.guard';
 import { CookComponent } from './cook/cook.component';
 import { MaidComponent } from './maid/maid.component';
 import { CookconfirmComponent } from './cookconfirm/cookconfirm.component';
+import { MadeconfirmComponent } from './madeconfirm/madeconfirm.component';
 
 
 const routes: Routes = [
@@ -54,7 +54,12 @@ const routes: Routes = [
                                 },
                                 {
                                   path:"cookconfirm",component:CookconfirmComponent
-                                }
+                                },
+                                {
+                                  path:"madeconfirm",component:MadeconfirmComponent
+                                },
+                                
+                              
     
   ]}
 ];

@@ -30,6 +30,10 @@ export class DataService {
   {
    return this.http.post('http://localhost:3000/confirm',d);
   }
+  mconfirm(d):any
+  {
+   return this.http.post('http://localhost:3000/mconfirm',d);
+  }
 
   
 }

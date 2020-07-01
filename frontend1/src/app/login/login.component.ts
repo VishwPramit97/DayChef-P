@@ -23,7 +23,10 @@ export class LoginComponent implements OnInit {
   }
   login()
   {
-    
+      alert("in login");
+      alert(this.emailProp);
+    if(!(this.emailProp==undefined))
+    {
     this.ds.SignIn({ email:this.emailProp, password:this.passwordProp})
     .subscribe((response)=>{
       if(response.status=="ok")
@@ -39,5 +42,9 @@ export class LoginComponent implements OnInit {
     })
     
   }
+  else{
+    alert("fill the form");
+  }
+    }
 
 }

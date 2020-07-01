@@ -33,6 +33,12 @@ export class MadeconfirmComponent implements OnInit {
       this.bookdetail3=d.get("shtime");
       this.bookdetail4=d.get("startdate");
       this.bookdetail5=d.get("enddate");
+      alert(this.bookdetail);
+      alert(this.bookdetail1);
+      alert(this.bookdetail2);
+      alert(this.bookdetail3);
+      alert(this.bookdetail4);
+      alert(this.bookdetail5);
   })
   
 

@@ -20,7 +20,9 @@ export class MaidComponent implements OnInit {
   }
   process()
 {
+
   this.route.navigate(['/dashboard/madeconfirm'],{queryParams:{startdate:this.earriveprop,enddate:this.arriveprop,time:this.timeprop,shtime:this.ttimeprop,demand:this.demandprop,people:this.peopleprop}})
+
 }
 
 }

@@ -23,7 +23,6 @@ export class LoginComponent implements OnInit {
   }
   login()
   {
-      alert("in login");
       alert(this.emailProp);
     if(!(this.emailProp==undefined))
     {
@@ -43,7 +42,7 @@ export class LoginComponent implements OnInit {
     
   }
   else{
-    alert("fill the form");
+    alert("please fill the required information");
   }
     }
 

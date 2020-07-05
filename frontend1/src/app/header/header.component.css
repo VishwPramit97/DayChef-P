@@ -49,6 +49,7 @@
    position:absolute;
    left:150px;
    top:30px; 
+   font-size: 50px;
 } 
 .img5{
     width:50%;
@@ -118,6 +119,9 @@
        border-bottom:1px solid rgba(100,100,100,0.3);
 
 }
+.col2 .cool h1{
+    font-size:50px;
+}
 #sidebar .toggle-btn{
    position:absolute;
    left:230px;
@@ -138,3 +142,103 @@
 #sidebar.active{
     left:0px;
 }
+ @media all and (max-width:550px){
+  
+    .img1{
+     width:22%;
+     
+ }
+ .two {
+     display:none;
+ }
+ .upback h3{
+     left:115px;
+ }
+ #sidebar .toggle-btn span{
+     width:20px;
+     height:4px;
+ }
+ 
+ .col2{
+    width:20%;
+    height:600px;
+    flex-direction: column;
+  
+}
+
+.col1 .img5{
+    width:30%;
+    position:absolute;
+    top:150px;
+    left:50px;
+    height:300px;
+}
+.col2 h4{
+   position:relative;
+   left:10px;
+   font-size: 20px;
+}
+.col2 .cool h1{
+    position:relative;
+    left:10px;
+    font-size:30px;
+}
+.one{
+    width:220px;
+    height:68px;
+    background-color:black;
+    position:absolute;
+    top:320px;
+    left:0px;
+    border-radius:2%;   
+}
+.one h6{
+ position:relative;
+ left:10px;
+ font-size:14px;
+ top:5px;
+}
+.one select{
+    position:relative;
+     left:50px;
+     top:10px;
+     width:100px
+}
+.upback{
+    height:80px;
+}
+ .img1{
+    height:70px;
+    position: absolute;;
+    top:10px;
+}
+.upback h3{
+    position: absolute;
+    font-size:40px;
+    top:20px;
+}
+#sidebar{
+    width:150px;
+    height:520px;
+    /* background-color:black; */
+   color:white;
+   left:-150px;
+   translate: 2sec;
+   top:70px;
+   z-index:4;
+   position:fixed;
+}
+#sidebar ul li{
+       list-style: none;
+       font-size:15px;
+       text-align: center;
+       padding: 15px 10px ;
+       border-bottom:1px solid rgba(100,100,100,0.3);
+}
+#sidebar .toggle-btn{
+   position:absolute;
+   left:170px;
+   top:10px;
+}
+
+ }

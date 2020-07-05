@@ -22,6 +22,7 @@ import { CookComponent } from './cook/cook.component';
 import { MaidComponent } from './maid/maid.component';
 import { CookconfirmComponent } from './cookconfirm/cookconfirm.component';
 import { MadeconfirmComponent } from './madeconfirm/madeconfirm.component';
+import { LoadingComponent } from './loading/loading.component';
 
 
 @NgModule({
@@ -43,7 +44,8 @@ import { MadeconfirmComponent } from './madeconfirm/madeconfirm.component';
     CookComponent,
     MaidComponent,
     CookconfirmComponent,
-    MadeconfirmComponent
+    MadeconfirmComponent,
+    LoadingComponent
   
   ],
   imports: [

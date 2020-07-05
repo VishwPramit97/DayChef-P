@@ -1,10 +1,10 @@
 .lbase{
-    width:80%;
-    height:555px;
+    width:100%;
+    height:650px;
    background-color:white;
     position:absolute;
     top:100px;
-    left:260px;
+    left:0px;
 }
 .photo{
     width:400px;
@@ -13,7 +13,8 @@
   background-size:cover;
   position: relative;
   top:100px;
-  left:0px;
+  left:150px;
+
 }
 .base{
     width:400px;
@@ -21,8 +22,8 @@
     background-color:black;
     color:white;
     position:absolute;
-    top:50px;
-    left:600px;
+    top:100px;
+    left:900px;
   }
   .loginform{
       position: relative;
@@ -42,4 +43,46 @@
       background-image: url(adm2.png);
       background-size: 100% 100%;
   }
-  
+  @media all and (max-width:550px)
+  {
+      .lbase{
+          width:100%;
+      }
+      .photo{
+        width:350px;
+        height:300px;
+        background-image: url(cust.png);
+        background-size: 100% 100%;
+        position:relative;
+        top:100px;
+        left:70px;
+      }
+      .base{
+        width:300px;
+        height:460px;
+        background-color:black;
+        color:white;
+        position:absolute;
+        top:450px;
+        left:100px;
+        margin-bottom:10px;
+      }
+      .loginform{
+        position: relative;
+        top:70px;
+        left:25px;
+        width:250px;
+    }
+    .picc{
+        width:100px;
+        height:100px;
+        background-color:turquoise;
+        border-radius: 100%;
+        position: absolute;
+        left:calc(50% -50px);
+        left:32%;
+        top:-50px;
+        background-image: url(adm2.png);
+        background-size: 100% 100%;
+    }
+  }

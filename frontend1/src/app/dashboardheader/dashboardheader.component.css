@@ -26,6 +26,9 @@
     color:orangered;
     transform:scale(1.1);
 }
+.joll h1{
+    position:absolute;top:250px;left:430px;letter-spacing:2px;color:red;text-shadow: 2px 1px 5px black;
+}
 .img1{
    position:absolute;
    top:0px;
@@ -67,6 +70,9 @@
   left:200px; 
   box-shadow: 2px 1px 5px black;
   cursor: pointer;
+}
+.upback h3{
+    font-size: 50px;
 }
 .service1{
     width:100px;
@@ -121,4 +127,116 @@
 }
 .service1:hover{
     transform:scale(1.2);
+}
+.role .jol {
+    position:absolute;
+    top:200px;
+    left:440px;
+    color:white;
+    
+}
+
+/* @media screen and (max-width:550px),screen and (max-height:700px) */
+@media all and (max-width:550px)
+{
+   
+    .img1{
+        width:22%;
+        position: absolute;
+        top:13px;
+        height:70px
+    }
+    .two {
+        display:none;
+    }
+    .upback h3{
+        left:115px;
+    }
+    #sidebar .toggle-btn span{
+        width:20px;
+        height:4px;
+    }
+    #sidebar{
+        width:180px;
+        height:520px;
+       left:-180px;
+       translate:1sec;
+       top:70px;
+       z-index:4;
+       position:fixed;
+       background-color: black;
+    }
+    #sidebar ul li{
+           list-style:none;
+           font-size:20px;
+           text-align: center;
+           padding: 15px 10px ;
+           border-bottom:1px solid rgba(100,100,100,0.3);
+           color:white;
+           font-weight:60px;
+    }
+    #sidebar .toggle-btn{
+       position:absolute;
+       left:185px;
+       top:15px;
+    }
+    .role{
+        width:100%;
+        height:500px;
+        background-image:url(bhc.jpg);
+        background-size:100% 100%;
+    }
+    .role h1{
+     position: absolute;
+     top:150px;
+    }
+    .upback{
+        height:80px;
+    }
+    .upback h3{
+        position: absolute;
+        font-size:40px;
+        top:20px;
+    }
+    .role .jol {
+        position:absolute;
+        top:-24px;
+        left:50px;
+        color:white;
+        
+    }
+    .role .jol{
+        font-size:18px ;
+        position: relative;
+    }
+    .joll h1{
+      position: absolute;
+      top:230px;
+      left:50px;
+    }
+    .role1{
+        width:350px;
+        height:420px;
+        background-color: white;
+        position: relative;
+        top:360px;
+        left:50px;
+        box-shadow: 2px 1px 5px black ;
+    }
+    .rol h1{
+        position:relative;
+        margin-left:-140px;
+        top:10px;
+        font-size:30px;
+    }
+    .service{
+        position: relative;
+        margin-left:-80px;
+        top:100px;
+    }
+    .service1{
+        position: relative;
+        margin-left:-280px;
+        top:180px;
+    }
 }

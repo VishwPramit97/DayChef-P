@@ -150,3 +150,28 @@ body {
       box-shadow: 2px 1px 5px red;
       border-radius: 50px;
 }
+@media all and (max-width:550px)
+{
+    .gol{
+        width:100%;
+        height:800px;
+    } 
+    .gol{
+        background-image:url(ckool.jpg);
+        background-size:100% 100%;
+        position:absolute;
+        top:0px;
+        left:0px;
+    }
+    .booking-widget {
+        width:345px;
+        height:485px;
+        padding-bottom: 1px;
+        background-color: #fbfbfb;
+        border-radius:5px;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, .44);
+        position: relative;
+        top:110px;
+        left:10px;
+    } 
+}

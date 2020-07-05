@@ -109,3 +109,21 @@ footer {
     top:20px;
     left:500px;
 }
+@media all and (max-width:550px)
+{
+    .icon-bar {
+        position: fixed;
+        top:20%;
+        height:5px;
+        left:90%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    .cbase {
+        width:93%;
+    }
+    .cbase h3{
+      font-size:30px;
+    }
+}

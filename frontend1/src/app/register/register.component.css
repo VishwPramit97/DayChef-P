@@ -7,8 +7,11 @@
     left:0;
     z-index:2;
 }
+.mbase h1{
+    padding-top:60px;position:absolute;left:200px;
+}
 .imp{
-    width:400px;
+    width:400px; 
     height:360px;
     position: relative;
     top:-270px;
@@ -35,7 +38,6 @@
   .picc{
       width:100px;
       height: 100px;
-      background-color:turquoise;
       border-radius: 100%;
       position: absolute;
       left:calc(50% -50px);
@@ -44,4 +46,35 @@
       background-image: url(adm2.png);
       background-size: 100% 100%;
   }
-  
+  @media all and (max-width:550px)
+  {
+     .sq h1{
+       position: relative;;
+       left:70px;
+       top:-25px;
+       font-size:27px;
+    }
+     .imp{
+        width:300px; 
+        height:250px;
+        position:absolute;
+        top:100px;
+        left:100px;
+    }
+    .base{
+        width:320px;
+        height:450px;
+        position:absolute;
+        top:400px;
+        left:90px;
+    }    
+    .mbase{
+        width:105%;
+        height:860px;
+        background-color:white;
+        position:absolute;
+        top:80px;
+        left:0;
+        z-index:2;
+    }
+  }

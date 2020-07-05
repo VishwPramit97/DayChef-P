@@ -39,4 +39,32 @@
         background-color:white;
         border-style: solid;
     }
-    
+    @media all and (max-width:550px)
+    {
+        .sec{
+            width:400px;
+            height:930px;
+
+        }
+        .third{
+            top:800px;
+            width:400px;
+            height:930px;
+        }
+        .four{
+            position:absolute;
+            top:950px;
+        }
+        .four h4{
+            width:500px;
+        }
+        .four h2{
+            width:500px;
+        }
+        .four button{
+            position:absolute;
+          left:-490px;
+          margin-bottom:5px;
+         
+        }
+    }
